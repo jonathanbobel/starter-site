@@ -1,0 +1,29 @@
+
+
+@font-face {
+	font-family: 'Bodoni Bold';
+	src: url('../../fonts/Bodoni-72-Bold.eot');
+	src: local('☺'), url('../../fonts/Bodoni-72-Bold.woff') format('woff'), url('../../fonts/Bodoni-72-Bold.ttf') format('truetype'), url('../../fonts/Bodoni-72-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bodoni';
+	src: url('../../fonts/Bodoni-72-Book.eot');
+	src: local('☺'), url('../../fonts/Bodoni-72-Book.woff') format('woff'), url('../../fonts/Bodoni-72-Book.ttf') format('truetype'), url('../../fonts/Bodoni-72-Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bodoni Italic';
+	src: url('../../fonts/Bodoni-72-Book-Italic.eot');
+	src: local('☺'), url('../../fonts/Bodoni-72-Book-Italic.woff') format('woff'), url('../../fonts/Bodoni-72-Book-Italic.ttf') format('truetype'), url('fonts/Bodoni-72-Book-Italic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	font-family: $bodoni;
+}

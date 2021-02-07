@@ -1,2 +1,1 @@
-# Starter Site
 # starter-site

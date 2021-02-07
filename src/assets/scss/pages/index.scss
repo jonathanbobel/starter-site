@@ -1,0 +1,51 @@
+@import '../includes';
+@import 'header';
+@import 'footer';
+
+html {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  min-height: 1000px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.hamburger {
+  position: fixed; 
+  display: none; 
+  background: none; 
+  right: 0px; 
+  top: 0px; 
+  width: 70px; 
+  height: 50px;
+  z-index: 4; 
+  &:focus {
+      outline: 0; 
+  }
+  @include bp(md) { 
+      display: flex; 
+  }
+}
+
+.hero {
+  max-width: 1600px;
+  margin: 0 auto; 
+  margin-bottom: 40px; 
+  position: relative;
+}
+
+.grid {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}

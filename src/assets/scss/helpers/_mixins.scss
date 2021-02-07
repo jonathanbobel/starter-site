@@ -1,0 +1,62 @@
+// Fonts
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+// Media Queries
+
+@mixin bp($point) {
+  @if $point == xl {
+    @media (max-width: 1440px) {
+      @content;
+    }
+  } @else if $point == lg {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $point == md {
+    @media (max-width: 992px) {
+      @content;
+    }
+  } @else if $point == sm {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+ @else if $point == xs {
+  @media (max-width: 578px) {
+    @content;
+  }
+}
+}
+
+// Etc
+
+@mixin box-shadow-25 {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.11);
+}
+
+// Spacing
+
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+//Margin mixin
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+// SVG Colors
+@mixin element-color($color) {
+  background-image: url('data:image/svg+xml;utf8,<svg ...><g stroke="#{$color}" ... /></g></svg>');
+}

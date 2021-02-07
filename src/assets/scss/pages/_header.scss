@@ -1,0 +1,98 @@
+header.w3-padding {
+    display: flex; 
+    justify-content: flex-end; 
+    flex-direction: column;
+    @include bp(md) { 
+        position: fixed; 
+        background: #fbfbfb; 
+        padding-top: 48px !important; 
+        z-index: 3;
+        right: -300px; 
+        transition: 0.3s;
+        text-align: center; 
+        //box-shadow: 0 0 10px $navy; 
+        &.is-active {
+            right: 0; 
+            max-width: 300px; 
+        }
+    }
+    nav {  
+        align-self: flex-end; 
+        margin-top: 16px;
+        @include bp(md) { 
+            align-self: center; 
+            width: 100%; 
+        }
+        ul {
+            li {
+                padding: 0 0 0 64px; 
+            }
+            @include bp(md) { 
+                flex-direction: column; 
+                justify-content: center;
+                align-items: center;
+                width: 100%; 
+                li {
+                    padding: 0; 
+                    align-items: center;
+                    letter-spacing: inherit;
+                    width: 100%; 
+                    border-bottom: 1px solid $navy; 
+                    &:last-child {
+                        border: 0; 
+                    }
+                    a {
+                        height: 35px;
+                        display: flex; 
+                        justify-content: center;
+                        align-items: center;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            } 
+        } 
+        &.util {
+            text-transform: uppercase;
+            a {
+                font-family: $bodoni-bold;
+                font-size: em(13);
+                letter-spacing: 2px;
+            }
+            @include bp(md) { 
+                order: 2; 
+                display: flex;
+            }
+        }
+        &.main {
+            font-size: em(26);
+            margin-bottom: 52px; 
+            @include bp(md) { 
+                margin-top: 12px; 
+                margin-bottom: 8px; 
+                li {
+                    a {
+                        height: 35px;
+                        display: flex; 
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    padding: 4px 0; 
+                    &:last-child { 
+                        border-bottom: 1px solid $navy; 
+                    }
+                }
+            }
+            a {
+                letter-spacing: -0.4px;
+            }
+        }
+        a {
+            padding: 0 4px; 
+            &:hover {
+            text-decoration: underline;
+            }
+        }
+    }
+}

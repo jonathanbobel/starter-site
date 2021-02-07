@@ -1,0 +1,28 @@
+
+.main {
+    max-width: 100%; 
+  }
+  
+  .w3-container { 
+    max-width: 1600px; 
+    margin: 0 auto; 
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  a, button {
+    text-decoration: none;
+    transition: all .1s linear;
+  }
+  
+  ul {
+    display: flex; 
+    flex-direction: row; 
+    list-style: none; 
+  }
+
+  

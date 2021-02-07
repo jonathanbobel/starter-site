@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-smooth: auto;
+  &:focus {
+    outline: $navy auto 1px;
+  }
+}
+
+html, body {
+  height: 100%;
+  font-size: 100%;
+  font-family: Open Sans, sans-serif;
+  line-height: 1.4;
+}
